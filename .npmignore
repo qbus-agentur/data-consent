@@ -5,3 +5,7 @@ index.html
 Makefile
 src/main.js
 rollup.config.js
+
+.gitattributes
+composer.json
+*.php
