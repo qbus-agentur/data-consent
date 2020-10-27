@@ -1,16 +1,27 @@
 # Data Consent library based on Promises
 
-This library is both a generic [JavaScript library](https://www.npmjs.com/package/@qbus/data-consent)
-and a [TYPO3 integration](https://packagist.org/packages/qbus/data-consent).
+This package provides a generic [JavaScript library](https://www.npmjs.com/package/@qbus/data-consent)
+for data consent management.
+
+Integrations for [TYPO3](https://packagist.org/packages/qbus/data-consent)
+and [Contao](https://packagist.org/packages/qbus/contao-data-consent-bundle) are
+available.
 
 ## Installation
 
 ```bash
 $ npm install --save @qbus/data-consent
+
 # For composer TYPO3 installations:
 $ composer require qbus/data-consent
+
 # For classic mode TYPO3 installations:
-$ git submodule add https://github.com/qbus-agentur/data-consent.git typo3conf/ext/data_consent
+$ git submodule add \
+    https://github.com/qbus-agentur/data-consent-typo3.git \
+    typo3conf/ext/data_consent
+
+# For Contao installations:
+$ composer require qbus/contao-data-consent-bundle
 ```
 
 ## Bundling CSS and JavaScript
